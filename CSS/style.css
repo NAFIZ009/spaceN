@@ -57,47 +57,62 @@ section {
     align-items: center;
 }
 
+.headerBtn{
+    /* width: 100%;
+    height: 100%; */
+    /* border-radius: 50%;
+    position:fixed;
+    bottom: 10px;
+    right: 10px; */
+}
+/* .headerBtn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+} */
+
+
 #sun .model img,.solar-system-sun img{
     width: 80%;
     clip-path: circle(45% at 50% 50%);
 }
 
-#mercury .model img{
+#mercury .model img,.solar-system-mercury img{
     width: 80%;
     clip-path: circle(45% at 50% 50%);
 }
 
-#venus .model img{
+#venus .model img,.solar-system-venus img{  
     width: 80%;
     clip-path: circle(40% at 50% 50%);
 }
 
-#earth .model img{
+#earth .model img,.solar-system-earth img{
     width: 70%;
     /* clip-path: circle(40% at 50% 50%); */
 }
 
-#mars .model img{
+#mars .model img,.solar-system-mars img{
     width: 80%;
     clip-path: circle(45% at 50% 50%);
 }
 
-#jupitar .model img{
+#jupitar .model img,.solar-system-jupitar img{
     width: 80%;
     clip-path: circle(40% at 50% 50%);
 }
 
-#saturn .model img{
+#saturn .model img,.solar-system-saturn img{
     width: 90%;
     clip-path: polygon(0 13%, 100% 15%, 100% 77%, 0 76%);
 }
 
-#uranus .model img{
+#uranus .model img,.solar-system-uranus img{
     width: 70%;
     clip-path: circle(50% at 50% 50%);
 }
 
-#neptune .model img{
+#neptune .model img,.solar-system-neptune img{
     width: 70%;
     clip-path: circle(38.7% at 50% 53%);
 }
@@ -118,8 +133,75 @@ section {
     /* clip-path: polygon(48% 0, 100% 0, 100% 51%, 48% 51%); */
 }
 
+.solar-system{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 .solar-system-sun{
-    width: 20%;
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.solar-system-mercury{
+    width: 2.5%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.solar-system-venus{
+    width: 4%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.solar-system-earth{
+    width: 5%;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.solar-system-mars{
+    width: 6%;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.solar-system-jupitar{
+    width: 7.5%;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.solar-system-saturn{
+    width: 7.5%;
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
+.solar-system-uranus{
+    width: 7%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.solar-system-neptune{
+    width: 3.5%;
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #solar-system-sun{
